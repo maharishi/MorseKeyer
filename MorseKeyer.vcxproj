@@ -116,10 +116,14 @@
     <None Include="MorseKeyer.ino">
       <FileType>CppCode</FileType>
     </None>
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pitches.h" />
     <ClInclude Include="__vm\.MorseKeyer.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Arduino_Schematics.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

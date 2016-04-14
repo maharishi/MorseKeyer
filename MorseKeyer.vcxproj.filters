@@ -16,6 +16,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MorseKeyer.ino" />
+    <None Include="README.md">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.MorseKeyer.vsarduino.h">
@@ -24,5 +27,10 @@
     <ClInclude Include="pitches.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Arduino_Schematics.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
