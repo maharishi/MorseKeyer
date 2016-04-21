@@ -3,13 +3,14 @@
 int LED = 9;
 int piezoSpeaker = 6;
 int button = 2;
+int pitchChanger = 3;
 
 //Variables for button debouncing
 volatile int pressed = 0;
 volatile int pressed_conf = 0;
 volatile int release_conf = 0;
 
-volatile int note_duration = 1000;
+int note_duration = 32767;
 
 
 void setup()
@@ -17,14 +18,15 @@ void setup()
 	Serial.begin(9600);
 	pinMode(LED, OUTPUT);
 	pinMode(button, INPUT);
+	pinMode(pitchChanger, INPUT);
 }
 
 void loop()
 {
-	//Button Pressed
+	int pitch = analogRead(pitchChanger);
+	Serial.println(pitch);
 	if (digitalRead(button) == HIGH)
 	{
-		note_duration += note_duration + 100;
 		pressed_conf++;
 		release_conf = 0;
 		if (pressed_conf > 10) {
@@ -47,9 +49,9 @@ void loop()
 				noTone(piezoSpeaker);
 				Serial.print("Button Released");
 				pressed = 0;
-				note_duration = 1000;
 			}
 			release_conf = 0;
 		}
 	}
+	delayMicroseconds(1500);
 }

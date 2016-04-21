@@ -74,7 +74,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>E:\Programs\arduino-1.7.9\hardware\arduino\avr\cores\arduino;E:\Programs\arduino-1.7.9\hardware\arduino\avr\variants\eightanaloginputs;E:\Maharishi\Documents\Arduino\MorseKeyer\MorseKeyer;E:\Programs\arduino-1.7.9\libraries;E:\Programs\arduino-1.7.9\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\1w2eaqdi.jx3\Micro Platforms\default\debuggers;E:\Maharishi\Documents\Arduino\libraries;E:\Programs\arduino-1.7.9\hardware\arduino\avr\cores\arduino;E:\Programs\arduino-1.7.9\hardware\arduino\avr\variants\eightanaloginputs;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\1w2eaqdi.jx3\Micro Platforms\default\debuggers\VM_DBG;E:\Programs\arduino-1.7.9\libraries;E:\Programs\arduino-1.7.9\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\1w2eaqdi.jx3\Micro Platforms\default\debuggers;E:\Maharishi\Documents\Arduino\libraries;{runtime.tools.avr-gcc.path}/avr/include/;{runtime.tools.avr-gcc.path}//avr/include/avr/;{runtime.tools.avr-gcc.path}/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Programs\arduino-1.7.9\hardware\arduino\avr\cores\arduino;E:\Programs\arduino-1.7.9\hardware\arduino\avr\variants\eightanaloginputs;E:\Maharishi\Documents\Arduino\MorseKeyer\MorseKeyer;E:\Programs\arduino-1.7.9\libraries;E:\Programs\arduino-1.7.9\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\1w2eaqdi.jx3\Micro Platforms\default\debuggers;E:\Maharishi\Documents\Arduino\libraries;{runtime.tools.avr-gcc.path}/avr/include/;{runtime.tools.avr-gcc.path}//avr/include/avr/;{runtime.tools.avr-gcc.path}/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>E:\Maharishi\Documents\Arduino\MorseKeyer\MorseKeyer\__vm\.MorseKeyer.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;_VMDEBUG=1;F_CPU=16000000L;ARDUINO=10709;ARDUINO_AVR_NANO;ARDUINO_ARCH_AVR;__cplusplus=201103L;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -128,4 +128,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM4" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
